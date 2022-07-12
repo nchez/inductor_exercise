@@ -1,0 +1,14 @@
+- Using terminal, cd into server directory. Activate python venv (command is: source venv/bin/activate)
+- Once venv is active, run the following command in the terminal: pip install
+- After pip install is complete, run the following command in the terminal to export flask app isntance: export FLASK_APP=main
+- Then run the following command in the terminal to start the Flask app: flask run
+- Now, cd into client and run the following command in the terminal: npm i
+- After npm installs are complete, run the following command to start the react-app: npm start
+- Visit the path shown in the terminal on a browser to see app (usually localhost:3000)
+
+
+- NOTE: I could not get the API calls working from the front-end. I spent quite a bit of time yesterday getting it to work but I couldn't get it going today. The fix I had yesterday was adding a 'proxy' key in the client's package.json file and setting the value to the path of the flask app.
+
+- NOTE2: The API calls would filter the dates for the user so no further frontend computations would be needed. Since I couldnt get the API calls working, the front end dates will show all dates, instead of filtering.
+
+- NOTE3: To see multigraph, change multi prop located in App.js from 'false' to 'true'.
